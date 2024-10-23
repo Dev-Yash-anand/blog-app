@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="h-screen width-full text-black p-10">
+        <div class="w-full flex justify-end text-white">
+            <a class="px-3 py-2 bg-red-600 rounded-md" href="/logout">Logout</a>
+        </div>
+        <form action="/upload" enctype="multipart/form-data" autocomplete="off" method="post">
+            <h1 class="mb-5 text-2xl">Upload Profile Picture</h1>
+            <input type="file" name="image">
+            <input type="submit" class="px-5 py-2 bg-blue-600 rounded-md text-white">
+        </form>
+    </div>
+</body>
+
+</html>

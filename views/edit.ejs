@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="h-screen width-full text-black p-10">
+        <div class="w-full flex justify-end text-white">
+            <a class="px-3 py-2 bg-red-600 rounded-md" href="/logout">Logout</a>
+        </div>
+        <form action="/update/<%= post._id %>" method="post">
+            <textarea name="content" class="p-3 rounded-md outline-none resize-none border-[1px] border-zinc-500 w-1/3"
+                placeholder="what;s in your mind?"><%= post.content %></textarea>
+            <input type="submit" value="Update Post"
+                class="px-3 w-40 font-semibold text-sm tracking-tight cursor-pointer py-3 bg-yellow-400 block mt-3 rounded-md text-black border-[1px] border-zinc-400">
+        </form>
+    </div>
+</body>
+
+</html>
